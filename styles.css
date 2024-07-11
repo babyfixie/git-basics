@@ -57,7 +57,7 @@ body {
     font-family: "Montserrat", sans-serif;
     border-radius: 30px;
     border: white 1.5px solid;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: transparent;
     width: 350px;
     height: 60px;

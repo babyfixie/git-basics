@@ -1,2 +1,3 @@
 # git-basics
-learning some stuff
+
+learning some stuff and having fun!
