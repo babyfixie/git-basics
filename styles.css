@@ -1,0 +1,77 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgb(158, 112, 112) 0%, rgba(69, 23, 23, 1) 100%);
+    text-align: center;
+    color: white;
+}
+
+.user-avatar {
+    box-shadow: 0px 0px 20px rgb(59, 59, 59);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 48px;
+    margin-bottom: 0;
+}
+
+.user-name {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 18px;
+}
+
+.user-skills {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 8px;
+    color: rgb(228, 228, 228);
+}
+
+.user-links {
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.icon {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.user-links-container {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-links-button {
+    font-family: "Montserrat", sans-serif;
+    border-radius: 30px;
+    border: white 1.5px solid;
+    color: white;
+    background-color: transparent;
+    width: 350px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.user-links-button:hover {
+    transition: 0.4s;
+    background-color: white;
+    color: black;
+}
