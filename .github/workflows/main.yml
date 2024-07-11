@@ -1,24 +1,24 @@
 name: Deploy to 000webhost
 
 on:
-  push:
-    branches:
-      - main  # Ветка, при пуше в которую будет выполняться деплой
+    push:
+        branches:
+            - main
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
+    deploy:
+        runs-on: ubuntu-latest
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v2
 
-    - name: FTP Deploy
-      uses: SamKirkland/FTP-Deploy-Action@4.0.0
-      with:
-        server: files.000webhost.com
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./  # Директория с вашим сайтом
-        server-dir: /public_html/  # Папка на сервере для деплоя
-        git-ftp-args: --insecure
+            - name: FTP Deploy
+              uses: SamKirkland/FTP-Deploy-Action@4.0.0
+              with:
+                  server: files.000webhost.com
+                  username: ${{ secrets.FTP_USERNAME }}
+                  password: ${{ secrets.FTP_PASSWORD }}
+                  local-dir: ./
+                  server-dir: /public_html/
+                  git-ftp-args: --insecure
