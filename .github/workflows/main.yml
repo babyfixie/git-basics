@@ -19,5 +19,5 @@ jobs:
         server: files.000webhost.com
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./public_html  # Директория с вашим сайтом
+        local-dir: ./public_html/  # Директория с вашим сайтом
         git-ftp-args: --insecure
