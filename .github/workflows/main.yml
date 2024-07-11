@@ -1,9 +1,9 @@
-name: Deploy to FTP
+name: Deploy to 000webhost
 
 on:
   push:
     branches:
-      - main  # ветка, при пуше в которую будет выполняться деплой
+      - main  # Ветка, при пуше в которую будет выполняться деплой
 
 jobs:
   deploy:
@@ -16,8 +16,8 @@ jobs:
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        ftp-server: files.000webhost.com
-        ftp-username: ${{ secrets.FTP_USERNAME }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./  # директория с вашим сайтом
+        server: files.000webhost.com
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./  # Директория с вашим сайтом
         git-ftp-args: --insecure
