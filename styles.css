@@ -72,6 +72,6 @@ body {
 
 .user-links-button:hover {
     transition: 0.4s;
-    background-color: white;
+    background-color: rgba(250, 250, 250, 0.4);
     color: black;
 }
