@@ -10,10 +10,6 @@ function showForm() {
 function subscribe(event) {
     event.preventDefault();
     var email = document.getElementById("email").value;
-    if (email === "" || email.indexOf("@") === -1) {
-        alert("Please enter a valid email address!");
-        return;
-    }
 
     alert("Successfully subscribed with " + email);
     console.log("Email: " + email);

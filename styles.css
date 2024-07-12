@@ -23,7 +23,7 @@ body {
 .subscribe {
     font-family: "Montserrat", sans-serif;
     border-radius: 30px;
-    border: white 1.5px solid;
+    border: white 1px solid;
     color: rgb(31, 31, 31);
     background-color: white;
     padding: 12px 24px;
@@ -34,12 +34,13 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    transition: background-color 0.4s, color 0.4s; /* Переход для обоих свойств */
+    transition: background-color 0.7s, color 0.7s, box-shadow 0.7s;
 }
 
 .subscribe:hover {
     background-color: transparent;
     color: white;
+    box-shadow: #4b4b4b 0px 0px 20px;
 }
 
 .about {
@@ -86,10 +87,10 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    transition: background-color 0.7s, color 0.7s;
 }
 
 .subscribe-button:hover {
-    transition: 0.4s;
     background-color: transparent;
     color: white;
 }
@@ -133,7 +134,7 @@ body {
 .user-links-button {
     font-family: "Montserrat", sans-serif;
     border-radius: 30px;
-    border: white 1.5px solid;
+    border: white 1px solid;
     color: rgb(255, 255, 255);
     background-color: transparent;
     width: 450px;
