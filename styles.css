@@ -34,10 +34,10 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    transition: background-color 0.4s, color 0.4s; /* Переход для обоих свойств */
 }
 
 .subscribe:hover {
-    transition: 0.4s;
     background-color: transparent;
     color: white;
 }
@@ -145,10 +145,10 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    transition: background-color 0.4s, color 0.4s;
 }
 
 .user-links-button:hover {
-    transition: 0.4s;
     background-color: rgba(250, 250, 250, 0.4);
     color: black;
 }
