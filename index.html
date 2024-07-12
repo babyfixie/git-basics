@@ -10,8 +10,15 @@
     </head>
     <body>
         <section class="about">
+            <div class="header">
+                <button id="subscribe" onclick="showForm()" class="subscribe">Subscribe</button>
+                <form id="subscribe-form" class="subscribe-form" onsubmit="subscribe(event)">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                    <button type="submit" class="subscribe-button">Subscribe</button>
+                </form>
+            </div>
             <div class="user-data">
-                <img src="img/ezgif-1-2c027a5c50.gif" class="user-avatar" alt="Avatar" />
+                <img src="img/photo_2024-07-12_23-02-58.jpg" class="user-avatar" alt="Avatar" />
                 <h3 class="user-name">FIXIE</h3>
                 <p class="user-skills">Web developer | UX/UI designer</p>
             </div>
@@ -42,5 +49,7 @@
                 </div>
             </div>
         </section>
+
+        <script src="script.js"></script>
     </body>
 </html>
