@@ -117,11 +117,6 @@ body {
     margin-bottom: 0;
 }
 
-.icon {
-    margin-left: 12px;
-    margin-right: 12px;
-}
-
 .user-links-container {
     margin-top: 32px;
     margin-bottom: 32px;
@@ -133,18 +128,19 @@ body {
 
 .user-links-button {
     font-family: "Montserrat", sans-serif;
+    padding: 0 30px;
     border-radius: 30px;
     border: white 1px solid;
     color: rgb(255, 255, 255);
     background-color: transparent;
-    width: 450px;
+    width: 400px;
     height: 60px;
     font-size: 18px;
     font-weight: 300;
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-decoration: none;
     transition: background-color 0.4s, color 0.4s;
 }
