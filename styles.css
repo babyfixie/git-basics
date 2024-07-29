@@ -1,15 +1,28 @@
 /* Global styles */
 .about {
     width: 100%;
-    height: auto;
+    height: 100vh;
     color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper {
+    padding: 50px 40px;
+    border-radius: 40px;
+    border: 1px solid white;
+    backdrop-filter: blur(20px);
 }
 
 body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
     min-height: 100vh;
-    background: linear-gradient(180deg, #927f99 0%, #301f31 100%);
+    background: url("img/19256496_6106343.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* Header */
@@ -100,7 +113,6 @@ body {
 /* User data */
 
 .user-data {
-    padding-top: 48px;
     margin-bottom: 0;
     text-align: center;
 }
@@ -127,6 +139,11 @@ body {
     color: rgb(228, 228, 228);
 }
 
+.user-links i {
+    color: #fff;
+    font-size: 32px;
+}
+
 .user-links {
     margin-top: 16px;
     margin-bottom: 0;
@@ -134,7 +151,6 @@ body {
 
 .user-links-container {
     margin-top: 32px;
-    margin-bottom: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,12 +159,12 @@ body {
 
 .user-links-button {
     font-family: "Montserrat", sans-serif;
-    padding: 0 30px;
+    padding: 0 20px;
     border-radius: 30px;
     border: white 1px solid;
     color: rgb(255, 255, 255);
     background-color: transparent;
-    width: 400px;
+    width: 350px;
     height: 60px;
     font-size: 18px;
     font-weight: 300;
@@ -161,8 +177,16 @@ body {
 }
 
 .user-links-button:hover {
-    background-color: rgba(250, 250, 250, 0.4);
+    background-color: rgba(250, 250, 250, 0.2);
     color: black;
+}
+
+.user-links-button:hover i {
+    color: black;
+}
+
+.user-links-button i {
+    transition: color 0.4s;
 }
 
 /* Phones */
@@ -171,5 +195,12 @@ body {
     .user-links-button {
         width: 275px;
         padding: 0 20px;
+    }
+
+    .wrapper {
+        padding: 30px 20px;
+        border-radius: 40px;
+        border: 1px solid white;
+        backdrop-filter: blur(10px);
     }
 }
