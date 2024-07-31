@@ -230,9 +230,4 @@ body {
         margin-top: 18px;
         gap: 12px;
     }
-
-    .about {
-        justify-content: start;
-        margin-top: 100px;
-    }
 }
