@@ -14,10 +14,11 @@
     border-radius: 40px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(15px);
 }
 
 body {
+    overflow: hidden;
     font-family: "Montserrat", sans-serif;
     margin: 0;
     width: 100%;
@@ -25,6 +26,7 @@ body {
     background: url("img/red1.svg") no-repeat;
     background-color: #46202a;
     background-size: cover;
+
     background-position: center;
 }
 
@@ -220,6 +222,7 @@ body {
 
     .user-skills-mobile {
         display: block;
+        margin-top: 6px;
     }
 
     .user-links i {
